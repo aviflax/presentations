@@ -51,32 +51,35 @@ I followed the link and started reading, and I was astounded.
 
 ### slide
 
-[screenshot of my tweet]
+[??]
 
-And that’s how I found out that I have aphantasia — an impaired ability to visualize in my “mind’s eye”
+And that’s how I found out that I have a neurological condition called aphantasia — an impaired ability to visualize in my “mind’s eye”
 
 ### slide
 
-[??]
+[screenshot of my tweet]
 
 Suddenly, lots of random idiosyncrasies, tics and quirks of mine fit together, made sense, had a unifying narrative.
+
 In particular, I now, for the first time, had a plausible hypothesis for the quirks of my memory; specifically, how my memory works — or doesn’t.
 
 ### slide
 
 [??]
 
-We don’t have time for a comprehensive discussion of how my memory works, but one aspect that’s relevant is that I’m almost completely unable to memorize.
+Now, unfortunately, we don’t have time for a comprehensive discussion of how my memory works. But we can discuss one aspect that’s relevant: that I’m basically incapable of memorization.
 
 It’s not that I’m unable to learn new information, and not that I’m unable to access information I’ve previously learned.
 
+I can learn. Just not through memorization.
+
 It’s almost as though I’m just missing certain kinds of indices that other people have. If our memories are data structures, then most people’s seem to be extremely sophisticated structures allowing for random access and multiple indices on the same data.
 
-Whereas my memory seems to be just a simple tree; the only way to get to a given node is to walk the tree.
+Whereas my memory seems to be similar to a simplistic tree; the only way to get to a given node seems to be to walk the tree.
 
-The end-result is that I don’t know how to memorize anything intentionally; I see memorization as a kind of brute-force technique that is just incompatible with my wetware. Instead, the only way for me to retain anything usefully is to really learn it. To learn it as a system, as a network of connected information, a Web, etc.
+The end-result is that I don’t know how to memorize anything intentionally. I see memorization as a kind of brute-force technique that is just incompatible with my wetware. Instead, the only way for me to retain anything usefully is to **really** learn it. To learn it as a system, as a network of connected information, a Web, etc. To **understand** it.
 
-The thing is, for me to really learn something takes time — often a lot of time.
+The thing is, though: to truly understand something takes time — often a lot of time.
 
 ### slide
 
@@ -88,7 +91,7 @@ In a world that often equates memory with intelligence, I have developed habits 
 
 [screenshot of Dash]
 
-For example, this is Dash, one of my favorite programming tools. It downloads and indexes API docs, for…
+For example, this is Dash, one of my favorite programming tools. It downloads and indexes API docs, for… **FINISH**
 
 I’ve come to believe that I use diagrams similarly to these API docs — as a reference, as a sort of an external memory or external index for the systems I need to work with.
 
@@ -98,8 +101,73 @@ There’s another kind of visualization that should be familiar to most of you �
 
 [map or maps]
 
-When a person enters a new geographical environment, they’ll often refer to maps to get their bearings in that environment and to navigate that environment, until they’ve eventually committed the geographical information they need regularly to memory.
+When a person enters a new geographical environment, they’ll often refer to maps to get their bearings in that environment and to navigate that environment, until they’ve eventually committed the geographical information they need regularly to memory — in other words, until they’ve learned that environment.
 
-I believe that, for me, a diagram of a system is a way for me to get my bearings in that system, so I can get right to work and be effective before I’ve committed the layout to memory.
+I believe that, for me, a diagram of a system is akin to a map: a way for me to get my bearings in that system, so I can get right to work and be effective well before I’ve attained a comprehensive understanding of that system.
 
 Because I can and will eventually commit structures like these to memory — somehow, I learn them, and I can recall the relationships. Not visually, but semantically.
+
+
+### slide
+
+[??]
+
+I think this is why I find diagrams so crucial when I’m in a new context — they enable fast and effective **reference** _and_ fast and effective **learning**.
+
+I’d like to posit here today that while this may be _especially_ true for me, and maybe for others with aphantasia, I suspect this also holds true for neurotypical folks.
+
+So basically, diagrams are a fast and effective medium for reference and learning, that can help people be more effective faster, in new contexts.
+
+Great. Diagrams are awesome. End of talk, maybe?
+
+## What Is
+
+### slide
+
+[??]
+
+Not so fast.
+
+Diagrams are awesome, but the most common approaches to creating maintaining, and publishing them are definitely not awesome. They’re highly lacking in awesomeness.
+
+### slide
+
+[scribbled diagrams on whiteboards]
+
+Have any of you ever joined a new team and asked someone if any diagrams exist, only to have that person lead you over to a whiteboard whereupon they start scribbling and freestyling some diagrammatic impressionist art?
+
+I certainly have.
+
+### slide
+
+[pinned-up printouts of diagrams]
+
+Have any of you ever joined a new team, looked for diagrams, found some promising ones pinned up to the wall on paper, but when you ask who made them and when, you just get shrugs?
+
+I certainly have.
+
+### slide
+
+## What Could Be
+
+### slide
+
+### slide
+
+## What Is
+
+### slide
+
+### slide
+
+## What Could Be
+
+### slide
+
+### slide
+
+## What Is
+
+### slide
+
+### slide
