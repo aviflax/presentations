@@ -148,9 +148,46 @@ I certainly have.
 
 ### slide
 
+[?? screenshot of last-updated timestamp? Maybe papyrus? Old software books?]
+
+Have you ever asked someone to work with you to create a diagram, who declined because “documentation is always out of date”
+
+I certainly have.
+
+### slide
+
+[?? maybe screenshot of OmniGraffle pricing page?]
+
+Have you ever rejoiced at actually finding the source file for a useful diagram that needs to be updated — only to be unable to change it, for lack of a proprietary and expensive software license?
+
+I certainly… you get the idea.
+
+### slide
+
+[?? maybe video of tweaking layout?]
+
+Have you ever struggled to get the elements of a diagram laid out evenly and consistently, cursing every moment of it, because what the hell, computers were supposed to eliminate this kind of drudgery years ago!
+
+### slide
+
+[??]
+
+I’ve been creating and maintaining diagrams for decades, and I’ve been perennially frustrated by experiences like these.
+
+I’d regularly look around to try to find new tools and techniques that might address these frustrations, but I never found anything satisfactory.
+
+Until recently.
+
 ## What Could Be
 
 ### slide
+
+[obligatory morpheus image macro]
+
+What if I told you…
+
+…that there’s a technology that can radically transform how we create, maintain, and publish our diagrams?
+
 
 ### slide
 
