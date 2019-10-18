@@ -134,7 +134,7 @@ Diagrams are awesome, but the most common approaches to creating maintaining, an
 
 [scribbled diagrams on whiteboards]
 
-Have any of you ever joined a new team and asked someone if any diagrams exist, only to have that person lead you over to a whiteboard whereupon they start scribbling and freestyling some diagrammatic impressionist art?
+Have any of you ever joined a new team and asked someone if any diagrams exist, only to have that person lead you over to a whiteboard and scribbling and freestyling some diagrammatic impressionist art?
 
 I certainly have.
 
@@ -142,7 +142,7 @@ I certainly have.
 
 [pinned-up printouts of diagrams]
 
-Have any of you ever joined a new team, looked for diagrams, found some promising ones pinned up to the wall on paper, but when you ask who made them and when, you just get shrugs?
+Have any of you ever joined a new team, looked for diagrams, found some promising ones pinned up to the wall on paper, but when you ask who made them and when, you just get shrugs? Or “oh, they left last year”?
 
 I certainly have.
 
@@ -150,7 +150,7 @@ I certainly have.
 
 [?? screenshot of last-updated timestamp? Maybe papyrus? Old software books?]
 
-Have you ever asked someone to work with you to create a diagram, who declined because “documentation is always out of date”
+Have you ever asked someone to work with you to create a diagram, and they declined because, according to them, “documentation is always out of date”
 
 I certainly have.
 
@@ -186,10 +186,21 @@ Until recently.
 
 What if I told you…
 
-…that there’s a technology that can radically transform how we create, maintain, and publish our diagrams?
+…that there’s a technique (**?**) that can radically transform how we create, maintain, and publish our diagrams?
 
+A technique that many of us already use every day, even if we might not realize it?
 
 ### slide
+
+[??]
+
+Have any of you ever written a README with [Markdown](https://en.wikipedia.org/wiki/Markdown)?
+
+A blog post with semantic HTML?
+
+Maybe even a paper with [TeX](https://en.wikipedia.org/wiki/TeX), or a book with [DocBook](https://en.wikipedia.org/wiki/DocBook)?
+
+
 
 ## What Is
 
