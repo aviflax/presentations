@@ -214,11 +214,45 @@ You can do all sorts of fun things!
 
 Wouldn’t it be cool if we could express our diagrams as _data in text files_ so that we could then do some of these fun things with our diagrams?
 
+I think that would be super cool!
+
+Now, you might be thinking — don’t we already have tools that can do that? [Graphviz](http://graphviz.org), [PlantUML](http://plantuml.com), [Mermaid](http://knsv.github.io/mermaid/#/), etc?
+
+Well, yes, those tools do exist. I’ve tried many over the years. Unfortunately, none of them have ever felt like a good fit for software _architecture_.
+
+There are a few reasons for this.
+
 ## What Is
 
 ### slide
 
+[image of a very graph-y graph]
+
+For example, Graphviz is a very well known tool. And it’s an excellent tool.
+
+Unfortunately, Graphviz is all about graphs! _Mathemetical_ graphs. 
+
+So it makes composition and nesting quite awkward.
+
 ### slide
+
+[image of composed/nested elements on an architecture diagram]
+
+Which is unfortunate, because nested elements are an extremely useful notation to include in an architecture diagram!
+
+### slide
+
+[??]
+
+All or most of these tools support only algorithmic layouts when rendering diagrams — meaning the tool decides where to postion all the elements, how to route the relationship lines, etc.
+
+This is great when one has a lot of data and one is creating a visualization in order to explore that data, to seek new insights.
+
+But it’s not great at all when one is _authoring_ the data specifically in order to create a visualization designed to _convey_ a coherent _story_ about about those elements.
+
+It turns out that when one _is_ trying to convey a coherent story about a set of elements, it’s extremely useful to be able to specify the relative positioning of those elements.
+
+Whenever I tried Graphviz, I’d find myself wrestling with its algorithms just to get things laid out clearly and usefully.
 
 ## What Could Be
 
@@ -231,3 +265,15 @@ Wouldn’t it be cool if we could express our diagrams as _data in text files_ s
 ### slide
 
 ### slide
+
+## Call to Action
+
+### slide
+
+[??]
+
+## The New Bliss
+
+### slide
+
+[??]
