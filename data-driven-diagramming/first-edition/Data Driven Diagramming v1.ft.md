@@ -188,19 +188,31 @@ What if I told you…
 
 …that there’s a technique (**?**) that can radically transform how we create, maintain, and publish our diagrams?
 
-A technique that many of us already use every day, even if we might not realize it?
+A technique that many of us already use every day, when writing programs?
 
 ### slide
 
 [??]
 
-Have any of you ever written a README with [Markdown](https://en.wikipedia.org/wiki/Markdown)?
+That’s right, it’s **data in text files!**
 
-A blog post with semantic HTML?
+### slide
 
-Maybe even a paper with [TeX](https://en.wikipedia.org/wiki/TeX), or a book with [DocBook](https://en.wikipedia.org/wiki/DocBook)?
+[??]
 
+So yeah... as many of us might already know, in Clojure, and all Lisps, code is data.
 
+We represent our code in text files using our language’s native data structure literals.
+
+This makes it trivial to generate new code and to parse code — and once it’s parsed you can manipulate it, analyze it, project it, transform it, translate it, graph it, etc.
+
+You can do all sorts of fun things!
+
+### slide
+
+[??]
+
+Wouldn’t it be cool if we could express our diagrams as _data in text files_ so that we could then do some of these fun things with our diagrams?
 
 ## What Is
 
