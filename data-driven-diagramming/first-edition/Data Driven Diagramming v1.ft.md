@@ -2,17 +2,13 @@
 
 Or: _Diagrams as Code_ v1?
 
-## Intro
-
-### slide
+## (intro)
 
 Today I’d like to share some thoughts on something that may seem prosaic, maybe even mundane.
 
 And maybe it is a little mundane, but it’s something I care about deeply. So I’m going to try to convince you that maybe you should care a little bit too.
 
-## What Is
-
-### slide
+## (what is)
 
 [various diagrams]
 
@@ -28,9 +24,7 @@ Every time I start a new job, or switch teams, I invariably look for diagrams th
 
 What’s going on here?
 
-## Interlude
-
-### (interlude)
+## (interlude)
 
 [blank, or maybe a blurry diagram]
 
@@ -38,26 +32,26 @@ This was puzzling to me for a long time, because I don’t think of myself as a 
 
 In fact, let me tell you a story.
 
-### (interlude)
+## (interlude)
 
 [screenshot of Ruby’s tweet]
 
 In April 2016, I was scrolling through my Twitter timeline when I came across this tweet by Sam Ruby (who’s currently the president of Apache) which linked to a tweet by Blake Ross, one of the creators of Firefox.
 
-### (interlude)
+## (interlude)
 
 [screenshot of Blake’s post]
 
 Ross’s tweet linked to this essay he’d just written.
 I followed the link and started reading, and I was astounded.
 
-### (interlude)
+## (interlude)
 
 [??]
 
 And that’s how I found out that I have a neurological condition called aphantasia — an impaired ability to visualize in my “mind’s eye.”
 
-### (interlude)
+## (interlude)
 
 [screenshot of my tweet]
 
@@ -65,7 +59,7 @@ Suddenly, lots of random idiosyncrasies, tics and quirks of mine fit together, m
 
 In particular, I now, for the first time, had a plausible hypothesis for the quirks of my memory; specifically, how my memory works — or doesn’t.
 
-### (interlude)
+## (interlude)
 
 [??]
 
@@ -83,13 +77,13 @@ The end-result is that I don’t know how to memorize anything intentionally. I 
 
 The thing is, though: to truly understand something takes time — often a lot of time.
 
-### (interlude)
+## (interlude)
 
 [???]
 
 In a world that often equates memory with intelligence, I have developed habits and strategies to compensate for my inability to memorize — for example, I rely heavily on reference materials while writing programs.
 
-### (interlude)
+## (interlude)
 
 [screenshot of Dash]
 
@@ -99,7 +93,7 @@ I’ve come to believe that I use diagrams similarly to these API docs — as a 
 
 There’s another kind of visualization that will be familiar to most of you — a visualization that people often use to get their bearings in a new context, and to learn about that context.
 
-### (interlude)
+## (interlude)
 
 [map or maps]
 
@@ -109,7 +103,7 @@ I believe that, for me, a diagram of a system is akin to a map: a way for me to 
 
 Because I can and will eventually commit structures like these to memory — somehow, I learn them, and I can recall the relationships. Not visually, but semantically.
 
-### (interlude)
+## (interlude)
 
 [??]
 
@@ -121,9 +115,7 @@ So basically, diagrams are a fast and effective medium for reference and learnin
 
 Great. Diagrams are awesome. End of talk, maybe?
 
-## What Is
-
-### (what is)
+## (what is)
 
 [??]
 
@@ -131,7 +123,7 @@ Not so fast.
 
 Diagrams are awesome, but the most common approaches to creating maintaining, and publishing them are definitely not awesome. They’re highly lacking in awesomeness.
 
-### (what is)
+## (what is)
 
 [scribbled diagrams on whiteboards]
 
@@ -139,7 +131,7 @@ Have any of you ever joined a new team and asked someone if any diagrams exist, 
 
 I certainly have.
 
-### (what is)
+## (what is)
 
 [pinned-up printouts of diagrams]
 
@@ -147,7 +139,7 @@ Have any of you ever joined a new team, looked for diagrams, found some promisin
 
 I certainly have.
 
-### (what is)
+## (what is)
 
 [?? screenshot of last-updated timestamp? Maybe papyrus? Old software books?]
 
@@ -155,7 +147,7 @@ Have you ever asked someone to work with you to create a diagram, and they decli
 
 I certainly have.
 
-### (what is)
+## (what is)
 
 [?? maybe screenshot of OmniGraffle pricing page?]
 
@@ -163,13 +155,13 @@ Have you ever rejoiced at actually finding the source file for a useful diagram 
 
 I certainly… you get the idea.
 
-### (what is)
+## (what is)
 
 [?? maybe video of tweaking layout?]
 
 Have you ever struggled to get the elements of a diagram laid out evenly and consistently, cursing every moment of it, because what the hell, computers were supposed to eliminate this kind of drudgery years ago!
 
-### (what is)
+## (what is)
 
 [??]
 
@@ -179,9 +171,7 @@ I’d regularly look around to try to find new tools and techniques that might a
 
 Until recently.
 
-## What Could Be
-
-### (what could be)
+## (what could be)
 
 [obligatory morpheus image macro]
 
@@ -191,13 +181,13 @@ What if I told you…
 
 A technique that many of us already use every day, when writing programs?
 
-### (what could be)
+## (what could be)
 
 [??]
 
 That’s right, it’s **data in text files!**
 
-### (what could be)
+## (what could be)
 
 [??]
 
@@ -209,7 +199,7 @@ This makes it trivial to generate new code and to parse code — and once it’s
 
 You can do all sorts of fun things!
 
-### (what could be)
+## (what could be)
 
 [??]
 
@@ -217,7 +207,7 @@ Wouldn’t it be cool if we could express our diagrams as _data in text files_ s
 
 I think that would be super cool!
 
-### (what could be)
+## (what could be)
 
 [??]
 
@@ -225,9 +215,7 @@ Using _Data in text files_ would also enable us to leverage all the rich, robust
 
 Those systems are fantastic for collaboration, but they’re optimized for collaborating on _text files_ — they can do very little with the proprietary binary file formats used by many diagramming tools.
 
-## What Is
-
-### (what is)
+## (what is)
 
 Now, you might be thinking — don’t we already have tools that can render diagrams from data in text files? Tools like [Graphviz](http://graphviz.org), [PlantUML](http://plantuml.com), [Mermaid](http://knsv.github.io/mermaid/#/), etc?
 
@@ -235,23 +223,23 @@ Well, yes, those tools do exist. I’ve tried many over the years. Unfortunately
 
 There are a few reasons for this.
 
-### (what is)
+## (what is)
 
 [image of a very graph-y graph]
 
 For example, Graphviz is a very well known tool. And it’s an excellent tool.
 
-Unfortunately, Graphviz is all about graphs! _Mathemetical_ graphs. 
+Unfortunately, Graphviz is all about graphs! _Mathemetical_ graphs.
 
 So it makes composition and nesting quite awkward.
 
-### (what is)
+## (what is)
 
 [image of composed/nested elements on an architecture diagram]
 
 Which is unfortunate, because nested elements are an extremely useful notation to include in an architecture diagram!
 
-### (what is)
+## (what is)
 
 [??]
 
@@ -265,7 +253,7 @@ It turns out that when one _is_ trying to convey a coherent story about a set of
 
 Whenever I tried Graphviz, I’d find myself wrestling with its algorithms just to get things laid out clearly and usefully.
 
-### (what is)
+## (what is)
 
 [??]
 
@@ -281,9 +269,7 @@ In my experience, the lack of a clear, robust, well-defined conceptual model is 
 
 (To be clear, those tools are great for lots and lots of use cases. I just don’t think they’re great for this very specific use case: software architecture diagrams.)
 
-## Interlude
-
-### (interlude)
+## (interlude)
 
 [??]
 
@@ -295,7 +281,7 @@ In my experience, the lack of a clear, robust, well-defined conceptual model is 
 - I was bummed, and I kept randomly searching the web for diagramming tools… EDIT
 - But then I stumbled across Structurizr.
 
-### (interlude)
+## (interlude)
 
 [screenshot of structurizr.com]
 
@@ -305,31 +291,22 @@ This is what I saw when I landed on structurizr.com:
 
 Oooh, the C4 model… what’s that?
 
-### (interlude)
+## (interlude)
 
 [screenshot of c4model.com]
 
+## (what could be)
 
-## What Could Be
+## (what could be)
 
-### (what could be)
+## (what is)
 
-### (what could be)
+## (what is)
 
-## What Is
-
-### slide
-
-### slide
-
-## Call to Action
-
-### slide
+## (call to action)
 
 [??]
 
-## The New Bliss
-
-### slide
+## (the new bliss)
 
 [??]
