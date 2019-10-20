@@ -1,12 +1,14 @@
 # Data Driven Diagramming v1
 
+Or: _Diagrams as Code_ v1?
+
 ## Intro
 
 ### slide
 
 Today I’d like to share some thoughts on something that may seem prosaic, maybe even mundane.
 
-And maybe it is mundane, but it’s something I care about deeply. So I’m going to try to convince you that maybe you should care a little bit too.
+And maybe it is a little mundane, but it’s something I care about deeply. So I’m going to try to convince you that maybe you should care a little bit too.
 
 ## What Is
 
@@ -14,7 +16,7 @@ And maybe it is mundane, but it’s something I care about deeply. So I’m goin
 
 [various diagrams]
 
-Diagrams are a powerful and widely used medium for teaching and learning about software systems.
+Architecture diagrams are a powerful and widely used medium for teaching and learning about software systems.
 
 They’re so commonplace that many of us rarely stop to think about how they are created and maintained.
 
@@ -28,7 +30,7 @@ What’s going on here?
 
 ## Interlude
 
-### slide
+### (interlude)
 
 [blank, or maybe a blurry diagram]
 
@@ -36,26 +38,26 @@ This was puzzling to me for a long time, because I don’t think of myself as a 
 
 In fact, let me tell you a story.
 
-### slide
+### (interlude)
 
 [screenshot of Ruby’s tweet]
 
 In April 2016, I was scrolling through my Twitter timeline when I came across this tweet by Sam Ruby (who’s currently the president of Apache) which linked to a tweet by Blake Ross, one of the creators of Firefox.
 
-### slide
+### (interlude)
 
 [screenshot of Blake’s post]
 
-Blake’s tweet linked to this essay he’d just written.
+Ross’s tweet linked to this essay he’d just written.
 I followed the link and started reading, and I was astounded.
 
-### slide
+### (interlude)
 
 [??]
 
-And that’s how I found out that I have a neurological condition called aphantasia — an impaired ability to visualize in my “mind’s eye”
+And that’s how I found out that I have a neurological condition called aphantasia — an impaired ability to visualize in my “mind’s eye.”
 
-### slide
+### (interlude)
 
 [screenshot of my tweet]
 
@@ -63,7 +65,7 @@ Suddenly, lots of random idiosyncrasies, tics and quirks of mine fit together, m
 
 In particular, I now, for the first time, had a plausible hypothesis for the quirks of my memory; specifically, how my memory works — or doesn’t.
 
-### slide
+### (interlude)
 
 [??]
 
@@ -77,17 +79,17 @@ It’s almost as though I’m just missing certain kinds of indices that other p
 
 Whereas my memory seems to be similar to a simplistic tree; the only way to get to a given node seems to be to walk the tree.
 
-The end-result is that I don’t know how to memorize anything intentionally. I see memorization as a kind of brute-force technique that is just incompatible with my wetware. Instead, the only way for me to retain anything usefully is to **really** learn it. To learn it as a system, as a network of connected information, a Web, etc. To **understand** it.
+The end-result is that I don’t know how to memorize anything intentionally. I see memorization as a kind of brute-force technique that is just incompatible with my wetware. Instead, the only way for me to retain anything usefully is to **really** learn it. To learn it as a system, as a network of connected information, a web, etc. To **understand** it.
 
 The thing is, though: to truly understand something takes time — often a lot of time.
 
-### slide
+### (interlude)
 
 [???]
 
 In a world that often equates memory with intelligence, I have developed habits and strategies to compensate for my inability to memorize — for example, I rely heavily on reference materials while writing programs.
 
-### slide
+### (interlude)
 
 [screenshot of Dash]
 
@@ -95,9 +97,9 @@ For example, this is Dash, one of my favorite programming tools. It downloads an
 
 I’ve come to believe that I use diagrams similarly to these API docs — as a reference, as a sort of an external memory or external index for the systems I need to work with.
 
-There’s another kind of visualization that should be familiar to most of you — a visualization that people often use to get their bearings in a new context, and to learn about that context.
+There’s another kind of visualization that will be familiar to most of you — a visualization that people often use to get their bearings in a new context, and to learn about that context.
 
-### slide
+### (interlude)
 
 [map or maps]
 
@@ -107,8 +109,7 @@ I believe that, for me, a diagram of a system is akin to a map: a way for me to 
 
 Because I can and will eventually commit structures like these to memory — somehow, I learn them, and I can recall the relationships. Not visually, but semantically.
 
-
-### slide
+### (interlude)
 
 [??]
 
@@ -122,7 +123,7 @@ Great. Diagrams are awesome. End of talk, maybe?
 
 ## What Is
 
-### slide
+### (what is)
 
 [??]
 
@@ -130,7 +131,7 @@ Not so fast.
 
 Diagrams are awesome, but the most common approaches to creating maintaining, and publishing them are definitely not awesome. They’re highly lacking in awesomeness.
 
-### slide
+### (what is)
 
 [scribbled diagrams on whiteboards]
 
@@ -138,7 +139,7 @@ Have any of you ever joined a new team and asked someone if any diagrams exist, 
 
 I certainly have.
 
-### slide
+### (what is)
 
 [pinned-up printouts of diagrams]
 
@@ -146,7 +147,7 @@ Have any of you ever joined a new team, looked for diagrams, found some promisin
 
 I certainly have.
 
-### slide
+### (what is)
 
 [?? screenshot of last-updated timestamp? Maybe papyrus? Old software books?]
 
@@ -154,7 +155,7 @@ Have you ever asked someone to work with you to create a diagram, and they decli
 
 I certainly have.
 
-### slide
+### (what is)
 
 [?? maybe screenshot of OmniGraffle pricing page?]
 
@@ -162,13 +163,13 @@ Have you ever rejoiced at actually finding the source file for a useful diagram 
 
 I certainly… you get the idea.
 
-### slide
+### (what is)
 
 [?? maybe video of tweaking layout?]
 
 Have you ever struggled to get the elements of a diagram laid out evenly and consistently, cursing every moment of it, because what the hell, computers were supposed to eliminate this kind of drudgery years ago!
 
-### slide
+### (what is)
 
 [??]
 
@@ -180,7 +181,7 @@ Until recently.
 
 ## What Could Be
 
-### slide
+### (what could be)
 
 [obligatory morpheus image macro]
 
@@ -190,13 +191,13 @@ What if I told you…
 
 A technique that many of us already use every day, when writing programs?
 
-### slide
+### (what could be)
 
 [??]
 
 That’s right, it’s **data in text files!**
 
-### slide
+### (what could be)
 
 [??]
 
@@ -208,7 +209,7 @@ This makes it trivial to generate new code and to parse code — and once it’s
 
 You can do all sorts of fun things!
 
-### slide
+### (what could be)
 
 [??]
 
@@ -216,15 +217,25 @@ Wouldn’t it be cool if we could express our diagrams as _data in text files_ s
 
 I think that would be super cool!
 
-Now, you might be thinking — don’t we already have tools that can do that? [Graphviz](http://graphviz.org), [PlantUML](http://plantuml.com), [Mermaid](http://knsv.github.io/mermaid/#/), etc?
+### (what could be)
+
+[??]
+
+Using _Data in text files_ would also enable us to leverage all the rich, robust tools and workflows that have been developed over decades to facilitate and support collaboration via text files: version control systems (VCSs) such as [Git](https://git-scm.com/) and collaboration systems built on those VCSs such as [GitHub](https://github.com/), [GitLab](https://gitlab.com/), [BitBucket](https://bitbucket.com/), [Gerritt](https://www.gerritcodereview.com), [Phabricator](https://www.phacility.com/phabricator/), etc.
+
+Those systems are fantastic for collaboration, but they’re optimized for collaborating on _text files_ — they can do very little with the proprietary binary file formats used by many diagramming tools.
+
+## What Is
+
+### (what is)
+
+Now, you might be thinking — don’t we already have tools that can render diagrams from data in text files? Tools like [Graphviz](http://graphviz.org), [PlantUML](http://plantuml.com), [Mermaid](http://knsv.github.io/mermaid/#/), etc?
 
 Well, yes, those tools do exist. I’ve tried many over the years. Unfortunately, none of them have ever felt like a good fit for software _architecture_.
 
 There are a few reasons for this.
 
-## What Is
-
-### slide
+### (what is)
 
 [image of a very graph-y graph]
 
@@ -234,19 +245,19 @@ Unfortunately, Graphviz is all about graphs! _Mathemetical_ graphs.
 
 So it makes composition and nesting quite awkward.
 
-### slide
+### (what is)
 
 [image of composed/nested elements on an architecture diagram]
 
 Which is unfortunate, because nested elements are an extremely useful notation to include in an architecture diagram!
 
-### slide
+### (what is)
 
 [??]
 
 All or most of these tools support only algorithmic layouts when rendering diagrams — meaning the tool decides where to postion all the elements, how to route the relationship lines, etc.
 
-This is great when one has a lot of data and one is creating a visualization in order to explore that data, to seek new insights.
+This is great when one has a large dataset on hand and one is creating a visualization in order to explore that data, to seek new insights.
 
 But it’s not great at all when one is _authoring_ the data specifically in order to create a visualization designed to _convey_ a coherent _story_ about about those elements.
 
@@ -254,11 +265,56 @@ It turns out that when one _is_ trying to convey a coherent story about a set of
 
 Whenever I tried Graphviz, I’d find myself wrestling with its algorithms just to get things laid out clearly and usefully.
 
+### (what is)
+
+[??]
+
+Finally, there’s the problem of how general-purpose these tools are.
+
+Mermaid alone supports flowcharts, sequence diagrams, class diagrams, state diagrams, Gannt charts, and Pie charts. PlantUML supports at least 18 kinds of diagrams.
+
+The generality of these tools means that they have no specific notations or conventions specifically for software architecture diagrams.
+
+In other words, they lack a _conceptual model_ for _how_ to author architecture diagrams.
+
+In my experience, the lack of a clear, robust, well-defined conceptual model is a major impediment to people getting involved with creating and maintaing architecture diagrams — it can be daunting to have to figure out on one’s own how to craft a good diagram.
+
+(To be clear, those tools are great for lots and lots of use cases. I just don’t think they’re great for this very specific use case: software architecture diagrams.)
+
+## Interlude
+
+### (interlude)
+
+[??]
+
+- So when I started a new job two years ago
+- I once again felt the need to create a bunch of architecture diagrams
+	- to get my bearings in a new context
+- I once again tried a few tools that could render diagrams from data in text files — even tried hacking something up with HTML+CSS
+- But I was once again stymied, and once again fell back to using GUIs with proprietary binary file formats (mostly LucidChart)
+- I was bummed, and I kept randomly searching the web for diagramming tools… EDIT
+- But then I stumbled across Structurizr.
+
+### (interlude)
+
+[screenshot of structurizr.com]
+
+This is what I saw when I landed on structurizr.com:
+
+> Have you ever spent _hours_ trying to make a software architecture diagram using a general purpose diagramming tool? Structurizr is a lightweight, web-based modelling tool that lets you quickly create diagrams based upon the [C4 model for software architecture](https://c4model.com/).
+
+Oooh, the C4 model… what’s that?
+
+### (interlude)
+
+[screenshot of c4model.com]
+
+
 ## What Could Be
 
-### slide
+### (what could be)
 
-### slide
+### (what could be)
 
 ## What Is
 
