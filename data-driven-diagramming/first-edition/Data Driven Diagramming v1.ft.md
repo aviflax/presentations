@@ -247,7 +247,7 @@ All or most of these tools support only algorithmic layouts when rendering diagr
 
 This is great when one has a large dataset on hand and one is creating a visualization in order to explore that data, to seek new insights.
 
-But it’s not great at all when one is _authoring_ the data specifically in order to create a visualization designed to _convey_ a coherent _story_ about about those elements.
+But it’s not at all great when one is _authoring_ the data specifically in order to create a visualization designed to _convey_ a coherent _story_ about about those elements.
 
 It turns out that when one _is_ trying to convey a coherent story about a set of elements, it’s extremely useful to be able to specify the relative positioning of those elements.
 
@@ -289,13 +289,37 @@ This is what I saw when I landed on structurizr.com:
 
 > Have you ever spent _hours_ trying to make a software architecture diagram using a general purpose diagramming tool? Structurizr is a lightweight, web-based modelling tool that lets you quickly create diagrams based upon the [C4 model for software architecture](https://c4model.com/).
 
-Oooh, the C4 model… what’s that?
+Oooh, the C4 model… what’s that? (Or maybe: I’d never clicked a link so fast in my life (or something like that.))
 
 ## (interlude)
 
 [screenshot of c4model.com]
 
-## (what could be)
+* Turns out, I wasn’t the only one who’d been frustrated with this situation
+* But unlike me, [Simon Brown](https://simonbrown.je/) had actually _done something_ about it
+
+## (interlude)
+
+[screenshot of c4model.com]
+
+He created the C4 model.
+
+## (interlude)
+
+[screenshot of c4model.com]
+[screenshot of structurizr.com]
+
+He created Structurizr, a Web-based system for hosting, browsing, and publishing C4 diagrams.
+
+## (interlude)
+
+[screenshot of c4model.com]
+[screenshot of structurizr.com]
+[screenshot of Structurizr Express]
+
+- And created Structurizr Express
+- SE is a single-page Web app that:
+	- defines a simple data model for C4 diagrams
 
 ## (what could be)
 
