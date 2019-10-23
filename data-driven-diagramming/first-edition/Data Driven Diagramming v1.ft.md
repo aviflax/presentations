@@ -277,7 +277,7 @@ In my experience, the lack of a clear, robust, well-defined conceptual model is 
 - I once again felt the need to create a bunch of architecture diagrams
 	- to get my bearings in a new context
 - I once again tried a few tools that could render diagrams from data in text files — even tried hacking something up with HTML+CSS
-- But I was once again stymied, and once again fell back to using GUIs with proprietary binary file formats (mostly LucidChart)
+- But I was once again stymied, and once again fell back to using GUIs with proprietary binary file formats ([OmniGraffle](https://www.omnigroup.com/omnigraffle), [LucidChart](https://www.lucidchart.com/), Graphviz, [Keynote](https://www.apple.com/keynote/))
 - I was bummed, and I kept randomly searching the web for diagramming tools… EDIT
 - But then I stumbled across Structurizr.
 
@@ -296,7 +296,7 @@ Oooh, the C4 model… what’s that? (Or maybe: I’d never clicked a link so fa
 [screenshot of c4model.com]
 
 * Turns out, I wasn’t the only one who’d been frustrated with this situation
-* But unlike me, [Simon Brown](https://simonbrown.je/) had actually _done something_ about it
+* But unlike me, a [Jerseyman](https://www.newworldencyclopedia.org/entry/Jersey#Demographics) named [Simon Brown](https://simonbrown.je/) had actually _done something_ about it
 
 ## (interlude)
 
@@ -317,17 +317,67 @@ He created Structurizr, a Web-based system for hosting, browsing, and publishing
 [screenshot of structurizr.com]
 [screenshot of Structurizr Express]
 
-- And created Structurizr Express
+- And he created Structurizr Express
 - SE is a single-page Web app that:
 	- defines a simple data model for C4 diagrams
+	- enables authoring C4 diagrams as YAML or JSON data as text
+	- enables authoring C4 diagrams graphically
+	- and it keeps them in sync!
+	- editing the data updates the graphic, and vice-versa!
 
 ## (what could be)
 
-## (what is)
+[??]
 
-## (what is)
+* I was super-excited when I found SE, and started using it immediately
+* I found that it got me 90% of the way towards my architecture diagramming nirvana
+* Not only that, but I was able to fill in the remaining 10% with my own code
+	* (Clojure code, of course)
+* At first, I just whipped up a few quick-and-dirty REPL functions
+	* But as more people started using them, eventually those scripts turned into a packaged, documented tool
+
+## (what could be)
+
+[screenshot of the FC4 homepage]
+
+* I bundled the tool together with a documented methodology for using it
+	* and called the whole bundle the FC4 Framework
+* FC4 wraps SE and thereby facilitates additional use cases:
+	* maintaining diagram source files as YAML files in a git repo
+	* reformatting and normalizing the diagram source files to prevent noisy diffs
+	* automatically snapping the elements in a diagram to a virtual grid
+		* to eliminate the drudgery of lining things up in a fiddly GUI
+	* automatically rendering those diagrams from YAML to images
+
+## (what could be)
+
+[short video showing an FC4 authoring session]
+
+- Here’s a quick authoring session
+- To recap, what you’re seeing here is:
+	- the user opens up a project that’s a local git repository in their text editor
+	- the project consists of data in text files
+	- those text files contain YAML data structures that define C4 software architecture diagrams
+	- the user runs fc4, which stays open in the background, watching the YAML files
+	- when the user changes part of the YAML source, 
 
 ## (call to action)
+
+[??]
+
+## (the new bliss)
+
+[??]
+
+## (interlude)
+
+[??]
+
+## (what is)
+
+[??]
+
+## (what could be)
 
 [??]
 
