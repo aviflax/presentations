@@ -1,12 +1,21 @@
 # Data Driven Diagramming v1
 
-Or: _Diagrams as Code_ v1?
+Or: _Diagrams as Code_?
+
+Or: _Data-Oriented Diagramming_?
+
+Or: _Diagrams as Data_?
+
+Or: _(Architecture) Diagrams as Data_?
 
 ## (intro)
 
-Today I’d like to share some thoughts on something that may seem prosaic, maybe even mundane.
+[??]
 
-And maybe it is a little mundane, but it’s something I care about deeply. So I’m going to try to convince you that maybe you should care a little bit too.
+- Today I’d like to share some thoughts on something that may seem prosaic, maybe even mundane
+- I get that it might be hard to muster up much excitement about software architecture diagrams
+- But it’s a topic that _I do_ get excited about
+- So I’m going to try to convince you that maybe you should care a little bit too
 
 ## (what is)
 
@@ -18,7 +27,11 @@ They’re so commonplace that many of us rarely stop to think about how they are
 
 Well, I’ve been creating and maintaining diagrams like these for decades.
 
-Over time, I started asking myself: why am I always, inevitably, drawn towards diagrams and diagramming?
+## (interlude)
+
+[¿a giant question mark?]
+
+Over time, I started asking myself: why am I always, inevitably, inexorably, drawn towards diagrams and diagramming?
 
 Every time I start a new job, or switch teams, I invariably look for diagrams that can help me learn about my new context — and often I don’t find any, so I create them myself.
 
@@ -49,7 +62,9 @@ I followed the link and started reading, and I was astounded.
 
 [??]
 
-And that’s how I found out that I have a neurological condition called aphantasia — an impaired ability to visualize in my “mind’s eye.”
+- And that’s how I found out that I have a neurological condition called aphantasia.
+- Aphantasia means that I don’t have a functioning “mind’s eye”
+- I don’t — _can’t_ — visualize images in my head
 
 ## (interlude)
 
@@ -67,13 +82,9 @@ Now, unfortunately, we don’t have time for a comprehensive discussion of how m
 
 It’s not that I’m unable to learn new information, and not that I’m unable to access information I’ve previously learned.
 
-I can learn. Just not through memorization.
+I can learn. Just not through memorization. In fact, I have no idea how to even begin to try to memorize anything.
 
-It’s almost as though I’m just missing certain kinds of indices that other people have. If our memories are data structures, then most people’s seem to be extremely sophisticated structures allowing for random access and multiple indices on the same data.
-
-Whereas my memory seems to be similar to a simplistic tree; the only way to get to a given node seems to be to walk the tree.
-
-The end-result is that I don’t know how to memorize anything intentionally. I see memorization as a kind of brute-force technique that is just incompatible with my wetware. Instead, the only way for me to retain anything usefully is to **really** learn it. To learn it as a system, as a network of connected information, a web, etc. To **understand** it.
+I see memorization as a kind of brute-force technique that is just incompatible with my wetware. Instead, the only way for me to retain anything usefully is to **really** learn it. To learn it as a system, as a network of connected information, a web, etc. To **understand** it.
 
 The thing is, though: to truly understand something takes time — often a lot of time.
 
@@ -87,9 +98,9 @@ In a world that often equates memory with intelligence, I have developed habits 
 
 [screenshot of Dash]
 
-For example, this is Dash, one of my favorite programming tools. It downloads and indexes API docs, for… **FINISH**
+For example, this is Dash, one of my favorite programming tools. It downloads and indexes API docs, so I can search and browse them extremely quickly, even when offline.
 
-I’ve come to believe that I use diagrams similarly to these API docs — as a reference, as a sort of an external memory or external index for the systems I need to work with.
+I’ve come to believe that I use diagrams similarly to how I use API docs like these: as a reference, as a sort of an external memory or external index for the systems that I need to work with.
 
 There’s another kind of visualization that will be familiar to most of you — a visualization that people often use to get their bearings in a new context, and to learn about that context.
 
@@ -127,7 +138,7 @@ Diagrams are awesome, but the most common approaches to creating maintaining, an
 
 [scribbled diagrams on whiteboards]
 
-Have any of you ever joined a new team and asked someone if any diagrams exist, only to have that person lead you over to a whiteboard and scribbling and freestyling some diagrammatic impressionist art?
+Have any of you ever joined a new team and asked someone if any diagrams exist, only to have that person lead you over to a whiteboard and start scribbling and freestyling some diagrammatic impressionist art, accompanied by stream-of-consciousness narration?
 
 I certainly have.
 
@@ -149,11 +160,11 @@ I certainly have.
 
 ## (what is)
 
-[?? maybe screenshot of OmniGraffle pricing page?]
+![fit original](media/Screenshot - OmniGraffle Pro License in omnigroup.com Shopping Cart.png)
 
-Have you ever rejoiced at actually finding the source file for a useful diagram that needs to be updated — only to be unable to change it, for lack of a proprietary and expensive software license?
+^ Have you ever rejoiced at actually finding the source file for a useful diagram that needs to be updated — only to be unable to change it, for lack of a proprietary and expensive software license?
 
-I certainly… you get the idea.
+^ I certainly… you get the idea.
 
 ## (what is)
 
@@ -177,9 +188,9 @@ Until recently.
 
 What if I told you…
 
-…that there’s a technique (**?**) that can radically transform how we create, maintain, and publish our diagrams?
+…that there’s a technology that can radically transform how we create, maintain, and publish our diagrams?
 
-A technique that many of us already use every day, when writing programs?
+A technology that many of us already use every day, when writing programs?
 
 ## (what could be)
 
@@ -189,13 +200,19 @@ That’s right, it’s **data in text files!**
 
 ## (what could be)
 
+[¿trollface?]
+
+No, really. I’m not trolling you, I promise.
+
+## (what could be)
+
 [??]
 
-So yeah... as many of us might already know, in Clojure, and all Lisps, code is data.
+As as many of us might already know, in Clojure, and all Lisps, code is data.
 
 We represent our code in text files using our language’s native data structure literals.
 
-This makes it trivial to generate new code and to parse code — and once it’s parsed you can manipulate it, analyze it, project it, transform it, translate it, graph it, etc.
+This makes it trivial to generate code and trivial to parse code — and once it’s parsed you can manipulate it, analyze it, project it, transform it, translate it, graph it, etc.
 
 You can do all sorts of fun things!
 
@@ -203,7 +220,7 @@ You can do all sorts of fun things!
 
 [??]
 
-Wouldn’t it be cool if we could express our diagrams as _data in text files_ so that we could then do some of these fun things with our diagrams?
+Wouldn’t it be cool if we could express our architecture diagrams as _data in text files_ so that we could then do some of these fun things with our diagrams?
 
 I think that would be super cool!
 
@@ -302,14 +319,14 @@ Oooh, the C4 model… what’s that? (Or maybe: I’d never clicked a link so fa
 
 [screenshot of c4model.com]
 
-He created the C4 model.
+Simon Brown created the C4 model.
 
 ## (interlude)
 
 [screenshot of c4model.com]
 [screenshot of structurizr.com]
 
-He created Structurizr, a Web-based system for hosting, browsing, and publishing C4 diagrams.
+Simon Brown created Structurizr, a Web-based system for hosting, browsing, and publishing C4 diagrams.
 
 ## (interlude)
 
@@ -317,7 +334,7 @@ He created Structurizr, a Web-based system for hosting, browsing, and publishing
 [screenshot of structurizr.com]
 [screenshot of Structurizr Express]
 
-- And he created Structurizr Express
+- And Simon Brown created Structurizr Express
 - SE is a single-page Web app that:
 	- defines a simple data model for C4 diagrams
 	- enables authoring C4 diagrams as YAML or JSON data as text
@@ -338,7 +355,7 @@ He created Structurizr, a Web-based system for hosting, browsing, and publishing
 
 ## (what could be)
 
-[screenshot of the FC4 homepage]
+![fit](media/Screen Shot - fc4 framework home page, captured 2019-10-22 at 8.57.18 PM.png)
 
 * I bundled the tool together with a documented methodology for using it
 	* and called the whole bundle the FC4 Framework
