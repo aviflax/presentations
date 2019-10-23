@@ -160,11 +160,11 @@ Diagrams are awesome, but the most common approaches to creating maintaining, an
 
 ----
 
-[?? screenshot of last-updated timestamp? Maybe papyrus? Old software books?]
+![photo](media/photo by Steve Weet of box full of old computer books.jpg)
 
-Have you ever asked someone to work with you to create a diagram, and they declined because, according to them, “documentation is always out of date”
+^ Have you ever asked someone to work with you to create a diagram, and they declined because, according to them, “documentation is always out of date” ?
 
-I certainly have.
+^ I certainly have.
 
 ----
 
@@ -336,14 +336,14 @@ In my experience, the lack of a clear, robust, well-defined conceptual model is 
 
 [screenshot of c4model.com]
 
-Simon Brown created the C4 model.
+^ So: Simon Brown created the C4 model.
 
 ----
 
 [screenshot of c4model.com]
 [screenshot of structurizr.com]
 
-Simon Brown created Structurizr, a Web-based system for hosting, browsing, and publishing C4 diagrams.
+^ He created Structurizr, a Web-based system for hosting, browsing, and publishing C4 diagrams.
 
 ----
 
@@ -361,6 +361,12 @@ Simon Brown created Structurizr, a Web-based system for hosting, browsing, and p
 
 ----
 
+![fit autoplay](media/Structurizr Express - quick demo.mp4)
+
+^ Here’s a quick demo of using SE
+
+----
+
 [??]
 
 * I was super-excited when I found SE, and started using it immediately
@@ -374,14 +380,21 @@ Simon Brown created Structurizr, a Web-based system for hosting, browsing, and p
 
 ![fit](media/Screen Shot - fc4 framework home page, captured 2019-10-22 at 8.57.18 PM.png)
 
-* I bundled the tool together with a documented methodology for using it
-	* and called the whole bundle the FC4 Framework
-* FC4 wraps SE and thereby facilitates additional use cases:
-	* maintaining diagram source files as YAML files in a git repo
-	* reformatting and normalizing the diagram source files to prevent noisy diffs
-	* automatically snapping the elements in a diagram to a virtual grid
-		* to eliminate the drudgery of lining things up in a fiddly GUI
-	* automatically rendering those diagrams from YAML to images
+^ I bundled the tool together with a documented methodology for using it
+
+^ and called the whole bundle the FC4 Framework
+
+^ FC4 wraps SE and thereby facilitates additional use cases:
+
+^ maintaining diagram source files as YAML files in a git repo
+
+^ reformatting and normalizing the diagram source files to prevent noisy diffs
+
+^ automatically snapping the elements in a diagram to a virtual grid
+
+^ to eliminate the drudgery of lining things up in a fiddly GUI
+
+^ automatically rendering those diagrams from YAML to images
 
 ----
 
@@ -393,7 +406,7 @@ Simon Brown created Structurizr, a Web-based system for hosting, browsing, and p
 	- the project consists of data in text files
 	- those text files contain YAML data structures that define C4 software architecture diagrams
 	- the user runs fc4, which stays open in the background, watching the YAML files
-	- when the user changes part of the YAML source, 
+	- when the user changes part of the YAML source,
 
 ----
 
