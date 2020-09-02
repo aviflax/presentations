@@ -86,9 +86,6 @@ Hundreds of customers using that cloud-based Web app
 
 ----
 
-## New Pipeline: Elements
+![diagram fit](images/structurizr-system-landscape.png)
 
-| Element | Purpose |
-| ------- | ------- |
-| Kafka topics | Data transport + persistence |
-|  | Data source
+----

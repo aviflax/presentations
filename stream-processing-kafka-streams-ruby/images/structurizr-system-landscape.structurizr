@@ -7,11 +7,11 @@ workspace "Presentation" "A model of my software system." {
       onPremSystems = softwareSystem "On-premises Systems"
 
       enterprise Cloud {
-        source = softwareSystem "Source"
-        topics = softwareSystem "Kafka topics" "Convey + persist data" "Pipe"
-        processors = softwareSystem "Stream processors" "Transform data"
-        sink = softwareSystem "Sink"
-        db = softwareSystem "Materialized view" "For downstream consumption" "DB"
+        source = softwareSystem "Source" "JRuby, EventMachine, Kafka Producer"
+        topics = softwareSystem "Kafka Topics" "Convey + persist data" "Pipe"
+        processors = softwareSystem "Stream Processors" "JRuby, Kafka Streams"
+        sink = softwareSystem "Sink" "JRuby, Kafka Consumer, JDBC"
+        db = softwareSystem "Materialized Views" "For downstream consumption" "DB"
         webUI = softwareSystem "Web UI for Customers" "" "WebUI"
       }
 
@@ -22,19 +22,21 @@ workspace "Presentation" "A model of my software system." {
       sink -> topics "Consumes" "Kafka Consumer"
       sink -> db "Writes" "JDBC"
       webUI -> db "Reads" "ActiveRecord"
-      customers -> webUI "Retrieves analytical graphs etc"
+      customers -> webUI "Generate analytical graphs, etc"
     }
 
     views {
         systemLandscape systemLandscape01 "The new data pipeline." {
             include *
-            autoLayout rl
+            autoLayout bt
         }
 
         styles {
             element Element {
               shape RoundedBox
-              fontSize 32
+              background #5793cf
+              color #ffffff
+              fontSize 42
               metadata false
             }
 
@@ -61,7 +63,7 @@ workspace "Presentation" "A model of my software system." {
 
             relationship Relationship {
               dashed false
-              fontSize 32
+              fontSize 40
               thickness 1
             }
         }
