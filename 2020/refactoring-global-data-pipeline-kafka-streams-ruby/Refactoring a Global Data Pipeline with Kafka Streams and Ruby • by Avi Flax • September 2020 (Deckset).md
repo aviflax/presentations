@@ -2,10 +2,12 @@ autoscale: false
 theme: Merriweather, 8
 build-lists: true
 
-[.header: text-scale(1.5)]
-[.text: text-scale(1.5)]
+[.header: text-scale(1.4)]
+[.text: text-scale(1.4)]
 
-# Stream Processing with Kafka Streams and Ruby
+# Refactoring a Global Data Pipeline with Kafka Streams and Ruby
+
+**A Case Study**
 
 Avi Flax
 September 2020
