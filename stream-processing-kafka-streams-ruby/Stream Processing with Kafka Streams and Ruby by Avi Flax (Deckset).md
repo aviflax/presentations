@@ -86,6 +86,10 @@ Hundreds of customers using that cloud-based Web app
 
 ----
 
-![diagram fit](images/structurizr-system-landscape.png)
+## Design + Technology Choices
+
+----
+
+![diagram original fit](images/new-system-landscape.png)
 
 ----

@@ -1,0 +1,65 @@
+# The DSL used herein is defined at https://github.com/structurizr/dsl
+
+workspace "Presentation" "A model of my software system." {
+
+    model {
+      customers = person "Customers"
+      onPremSystems = softwareSystem "On-premises Systems"
+
+      enterprise Cloud {
+        cronScripts = softwareSystem "cron scripts" "Bash, Ruby"
+        db = softwareSystem "Database" "" "DB"
+        webUI = softwareSystem "Web UI for Customers" "" "WebUI"
+      }
+
+      cronScripts -> onPremSystems "Poll to get data" "HTTP"
+      cronScripts -> db "Writes" "ActiveRecord"
+      webUI -> db "Reads" "ActiveRecord"
+      customers -> webUI "Generate analytical graphs, etc"
+    }
+
+    views {
+        systemLandscape systemLandscape01 "The old data pipeline." {
+            include *
+            autoLayout bt
+        }
+
+        styles {
+            element Element {
+              shape RoundedBox
+              background #5793cf
+              color #ffffff
+              fontSize 42
+              metadata false
+            }
+
+            element "Software System" {
+              width 600
+              height 300
+            }
+
+            element Person {
+              shape Person
+            }
+
+            element "Pipe" {
+              shape Pipe
+            }
+
+            element "DB" {
+              shape Cylinder
+            }
+
+            element WebUI {
+              shape WebBrowser
+            }
+
+            relationship Relationship {
+              dashed false
+              fontSize 40
+              thickness 1
+            }
+        }
+    }
+
+}
