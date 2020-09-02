@@ -49,6 +49,7 @@ A **Parking Guidance & Information** (PGI) system
 Hundreds of customers using that cloud-based Web app
 
 ----
+[.text: text-scale(1.4)]
 
 ## Analytics Pipeline
 
@@ -65,36 +66,55 @@ Hundreds of customers using that cloud-based Web app
 • But there were a lot of details that made it not so simple
 
 ----
+[.text: text-scale(1.4)]
 
 ## Problems
 
 * High latency
 * Low reliability
 
-## Goals
-
-* **Low** latency
-* **High** reliability
-
 ^
 • The old pipeline had some big problems «reveal»
 • Basically, it’d been designed and implemented when the number of customers was much smaller;
   • as the customer base grew it’d hit its scaling limit and was now overdue to be refactored.
-• 1 nice thing; goals of new pipeline very clear: «reveal»
+
+
+----
+[.text: text-scale(1.4)]
+
+## Primary Goals
+
+* ~~High~~ **Low** latency
+* ~~Low~~ **High** reliability
+
+## Secondary Goals
+
+* More events
+* Retrieve images
+
+^
+• 1 nice thing; main goals of new pipeline very clear: «reveal»
+• Secondary goals were new features; were impossible with old pipeline «reveal»
 
 ----
 
 ## Design + Technology Choices
 
 ----
+[.text: text-scale(2.0)]
 
-![old diagram fit](images/old-system-landscape-slide.png)
+**Old**
+
+![old diagram original fit](images/old-system-landscape.png)
 
 ^
 • Basically just a set of cron scripts that polled the on-prem servers on a fixed schedule
 
 ----
+[.text: text-scale(2.0)]
 
-![new diagram fit](images/new-system-landscape-slide.png)
+**New**
+
+![new diagram original fit](images/new-system-landscape.png)
 
 ----

@@ -6,12 +6,16 @@ workspace "Presentation" "A model of my software system." {
       customers = person "Customers"
       onPremSystems = softwareSystem "On-premises Systems"
 
+      # Questions:
+      # * Was the data warehouse in fact Redshift? I think so...
+
       enterprise Cloud {
         source = softwareSystem "Source" "JRuby, EventMachine, Kafka Producer"
         topics = softwareSystem "Kafka Topics" "Convey + persist data" "Pipe"
         processors = softwareSystem "Stream Processors" "JRuby, Kafka Streams"
         sink = softwareSystem "Sink" "JRuby, Kafka Consumer, JDBC"
-        db = softwareSystem "Materialized Views" "For downstream consumption" "DB"
+        bucket = softwareSystem "S3 Bucket" "For images" "FileStore"
+        db = softwareSystem "Data Warehouse" "Redshift" "DB"
         webUI = softwareSystem "Web UI for Customers" "" "WebUI"
       }
 
@@ -19,9 +23,12 @@ workspace "Presentation" "A model of my software system." {
       source -> topics "Produces" "Kafka Consumer"
       processors -> topics "Consume" "Kafka Streams"
       processors -> topics "Produce" "Kafka Streams"
+      processors -> onPremSystems "Retrieve images" "HTTP"
+      processors -> bucket "Store images" "HTTP"
       sink -> topics "Consumes" "Kafka Consumer"
       sink -> db "Writes" "JDBC"
       webUI -> db "Reads" "ActiveRecord"
+      webUI -> bucket "Reads to display images" "HTTP"
       customers -> webUI "Generate analytical graphs, etc"
     }
 
@@ -49,12 +56,16 @@ workspace "Presentation" "A model of my software system." {
               shape Person
             }
 
-            element "Pipe" {
+            element Pipe {
               shape Pipe
             }
 
-            element "DB" {
+            element DB {
               shape Cylinder
+            }
+
+            element FileStore {
+              shape Folder
             }
 
             element WebUI {

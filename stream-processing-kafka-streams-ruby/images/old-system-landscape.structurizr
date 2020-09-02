@@ -6,9 +6,13 @@ workspace "Presentation" "A model of my software system." {
       customers = person "Customers"
       onPremSystems = softwareSystem "On-premises Systems"
 
+      # Questions:
+      # * Were LPR images downloaded along with visits?
+      #   * If so, where were they saved, and what thing did the transfers?
+
       enterprise Cloud {
         cronScripts = softwareSystem "cron scripts" "Bash, Ruby"
-        db = softwareSystem "Database" "" "DB"
+        db = softwareSystem "Data Warehouse" "SQL Server" "DB"
         webUI = softwareSystem "Web UI for Customers" "" "WebUI"
       }
 
