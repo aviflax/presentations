@@ -77,9 +77,7 @@ Hundreds of customers using that cloud-based Web app
 * **High** reliability
 
 ^
-• The old pipeline
-  — basically just a set of cron scripts that polled the on-prem servers on a fixed schedule
-  — had some big problems «reveal»
+• The old pipeline had some big problems «reveal»
 • Basically, it’d been designed and implemented when the number of customers was much smaller;
   • as the customer base grew it’d hit its scaling limit and was now overdue to be refactored.
 • 1 nice thing; goals of new pipeline very clear: «reveal»
@@ -90,6 +88,13 @@ Hundreds of customers using that cloud-based Web app
 
 ----
 
-![diagram original fit](images/new-system-landscape.png)
+![old diagram fit](images/old-system-landscape-slide.png)
+
+^
+• Basically just a set of cron scripts that polled the on-prem servers on a fixed schedule
+
+----
+
+![new diagram fit](images/new-system-landscape-slide.png)
 
 ----
