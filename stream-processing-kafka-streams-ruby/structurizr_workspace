@@ -1,0 +1,70 @@
+# The DSL used herein is defined at https://github.com/structurizr/dsl
+
+workspace "Presentation" "A model of my software system." {
+
+    model {
+      customers = person "Customers"
+      onPremSystems = softwareSystem "On-premises Systems"
+
+      enterprise Cloud {
+        source = softwareSystem "Source"
+        topics = softwareSystem "Kafka topics" "Convey + persist data" "Pipe"
+        processors = softwareSystem "Stream processors" "Transform data"
+        sink = softwareSystem "Sink"
+        db = softwareSystem "Materialized view" "For downstream consumption" "DB"
+        webUI = softwareSystem "Web UI for Customers" "" "WebUI"
+      }
+
+      source -> onPremSystems "Consumes" "WebSockets"
+      source -> topics "Produces" "Kafka Consumer"
+      processors -> topics "Consume" "Kafka Streams"
+      processors -> topics "Produce" "Kafka Streams"
+      sink -> topics "Consumes" "Kafka Consumer"
+      sink -> db "Writes" "JDBC"
+      webUI -> db "Reads" "ActiveRecord"
+      customers -> webUI "Retrieves analytical graphs etc"
+    }
+
+    views {
+        systemLandscape systemLandscape01 "The new data pipeline." {
+            include *
+            autoLayout rl
+        }
+
+        styles {
+            element Element {
+              shape RoundedBox
+              fontSize 32
+              metadata false
+            }
+
+            element "Software System" {
+              width 600
+              height 300
+            }
+
+            element Person {
+              shape Person
+            }
+
+            element "Pipe" {
+              shape Pipe
+            }
+
+            element "DB" {
+              shape Cylinder
+            }
+
+            element WebUI {
+              shape WebBrowser
+            }
+
+            relationship Relationship {
+              dashed false
+              fontSize 32
+              thickness 1
+            }
+        }
+    }
+
+}
