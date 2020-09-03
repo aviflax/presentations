@@ -1,6 +1,6 @@
 # The DSL used herein is defined at https://github.com/structurizr/dsl
 
-workspace "Presentation" "A model of my software system." {
+workspace "PGI Batch ETL" "" {
 
     model {
       customers = person "Customers"

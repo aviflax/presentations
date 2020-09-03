@@ -1,6 +1,6 @@
 # The DSL used herein is defined at https://github.com/structurizr/dsl
 
-workspace "Presentation" "A model of my software system." {
+workspace "PGI Streaming ETL" "" {
 
     model {
       customers = person "Customers"
@@ -18,8 +18,8 @@ workspace "Presentation" "A model of my software system." {
 
       source -> onPremSystems "Consumes events from" "WebSockets"
       source -> topics "Produces events to" "Kafka Consumer"
-      processors -> topics "Consume events" "Kafka Streams"
-      processors -> topics "Produce events" "Kafka Streams"
+      processors -> topics "Consume events from" "Kafka Streams"
+      processors -> topics "Produce events to" "Kafka Streams"
       processors -> onPremSystems "Retrieve images from" "HTTP"
       processors -> bucket "Store images in" "HTTP"
       sink -> topics "Consumes events from" "Kafka Consumer"
@@ -32,7 +32,6 @@ workspace "Presentation" "A model of my software system." {
     views {
         systemLandscape systemLandscapePlanned "The planned new streaming data pipeline" {
             include *
-            autoLayout bt
         }
 
         styles {
@@ -71,7 +70,7 @@ workspace "Presentation" "A model of my software system." {
 
             relationship Relationship {
               dashed false
-              fontSize 40
+              fontSize 38
               thickness 1
             }
         }
