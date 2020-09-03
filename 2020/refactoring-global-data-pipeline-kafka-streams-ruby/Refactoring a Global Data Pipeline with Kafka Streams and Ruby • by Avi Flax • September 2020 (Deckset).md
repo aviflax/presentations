@@ -128,6 +128,9 @@ Programming | Clojure<br>Java<br>Kotlin<br>**Ruby**<br>Scala
 • Basically just a set of cron scripts that polled the on-prem servers on a fixed schedule
 
 ----
+[.text: text-scale(1.5)]
+
+**New (Streaming)**
 
 ![new diagram original fit](images/new-system-landscape.png)
 
