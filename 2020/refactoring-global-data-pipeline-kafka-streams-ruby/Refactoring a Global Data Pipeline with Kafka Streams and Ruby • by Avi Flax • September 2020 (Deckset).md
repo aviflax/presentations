@@ -2,10 +2,12 @@ autoscale: false
 theme: Merriweather, 8
 build-lists: true
 
-[.header: text-scale(1.4)]
-[.text: text-scale(1.4)]
+[.header: text-scale(1.2)]
+[.text: text-scale(1.2)]
 
-# Refactoring a Global Data Pipeline with Kafka Streams and Ruby
+# Refactoring a
+# Global Data Pipeline
+# with Kafka Streams & Ruby
 
 **A Case Study**
 
@@ -86,7 +88,7 @@ A **Parking Guidance & Information** (PGI) system
 
 ## Secondary Goals
 
-* More events
+* New types of events
 * Retrieve images
 
 ^
@@ -106,15 +108,17 @@ A **Parking Guidance & Information** (PGI) system
 • So we kicked the project off by choosing the set of technologies that we’d use
 
 ----
-[.text: text-scale(1.5)]
+[.text: text-scale(1.2)]
 
 ## Technology Choices
 
 Role | Options Considered
 ---- | ------------------
-Transport | **Kafka**<br>Kinesis
-Processing | **Kafka Streams**<br>Samza<br>Storm
-Programming | Clojure<br>Java<br>Kotlin<br>**Ruby**<br>Scala
+Transport | **Kafka**, Kinesis
+Serialization | **Avro**, JSON, Protocol Buffers
+Processing | **Kafka Streams**, Samza, Storm
+Programming | Clojure, Java, Kotlin, **Ruby**, Scala
+Infra as Code | Ansible, Chef, **Terraform**
 
 ^
 • Walk through options + choices
@@ -122,12 +126,22 @@ Programming | Clojure<br>Java<br>Kotlin<br>**Ruby**<br>Scala
 
 ----
 
+# Architecture Diagrams
+
+![whiteboard 50%](images/whiteboard.jpg)
+
+^
+• I know not everyone loves architecture diagrams,
+• but they’re kind of my thing, so please bear with me;
+• I won’t dive down into these;
+• unless I’m asked to.
+
+----
 [.text: text-scale(1.5)]
 
-**Old (Batch)**
+**Old / Batch**
 
-
-![old diagram original fit](images/old-system-landscape.png)
+![diagram old original fit](images/old.png)
 
 ^
 • Basically just a set of cron scripts that polled the on-prem servers on a fixed schedule
@@ -135,8 +149,15 @@ Programming | Clojure<br>Java<br>Kotlin<br>**Ruby**<br>Scala
 ----
 [.text: text-scale(1.5)]
 
-**New (Streaming)**
+**New / Streaming / Planned**
 
-![new diagram original fit](images/new-system-landscape.png)
+![diagram new planned original fit](images/new-planned.png)
+
+----
+[.text: text-scale(1.5)]
+
+**New / Streaming / Shipped**
+
+![diagram new shipped original fit](images/new-shipped.png)
 
 ----

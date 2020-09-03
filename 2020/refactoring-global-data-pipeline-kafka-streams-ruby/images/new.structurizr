@@ -3,7 +3,8 @@
 workspace "PGI Streaming ETL" "" {
 
     model {
-      customers = person "Customers"
+      customers = person "Customers" "" "NotShipped"
+      staff = person "Staff" "" "Shipped"
       onPremSystems = softwareSystem "On-premises Servers"
 
       enterprise Cloud {
@@ -13,7 +14,8 @@ workspace "PGI Streaming ETL" "" {
         sink = softwareSystem "Sink" "JRuby, Kafka Consumer, JDBC"
         bucket = softwareSystem "S3 Bucket" "For images" "FileStore"
         dw = softwareSystem "Data Warehouse" "Redshift or Druid" "DB"
-        webUI = softwareSystem "Web UI for Customers" "" "WebUI"
+        webUI = softwareSystem "Web UI for Customers" "" "WebUI, NotShipped"
+        imageCorrectionTool = softwareSystem "Image Correction Tool" "" "WebUI, Shipped"
       }
 
       source -> onPremSystems "Consumes events from" "WebSockets"
@@ -27,10 +29,20 @@ workspace "PGI Streaming ETL" "" {
       webUI -> dw "Queries event metrics from" "ActiveRecord"
       webUI -> bucket "Retrieves images" "HTTP"
       customers -> webUI "Generate analytical graphs, tables, etc"
+
+      imageCorrectionTool -> topics "Consumes events from"
+      imageCorrectionTool -> dw "Consumes events from"
+      imageCorrectionTool -> bucket "Retrieves Images" "HTTP"
+      staff -> imageCorrectionTool "Use to correct image recognition in real-time"
     }
 
     views {
         systemLandscape systemLandscapeNewStreamingETLPlanned "The planned new streaming data pipeline" {
+            include *
+            exclude staff imageCorrectionTool
+        }
+
+        systemLandscape systemLandscapeNewStreamingETLShipped "The shipped new streaming data pipeline" {
             include *
         }
 
@@ -46,6 +58,10 @@ workspace "PGI Streaming ETL" "" {
             element "Software System" {
               width 600
               height 300
+            }
+
+            element NotShipped {
+              background #99c7f5
             }
 
             element Person {
