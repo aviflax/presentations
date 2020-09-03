@@ -6,37 +6,31 @@ workspace "Presentation" "A model of my software system." {
       customers = person "Customers"
       onPremSystems = softwareSystem "On-premises Servers"
 
-      # Questions:
-      # * Was the data warehouse in fact Redshift? I think so...
-
       enterprise Cloud {
         source = softwareSystem "Source" "JRuby, EventMachine, Kafka Producer"
         topics = softwareSystem "Kafka Topics" "Convey + persist data" "Pipe"
         processors = softwareSystem "Stream Processors" "JRuby, Kafka Streams"
         sink = softwareSystem "Sink" "JRuby, Kafka Consumer, JDBC"
         bucket = softwareSystem "S3 Bucket" "For images" "FileStore"
-        db = softwareSystem "Data Warehouse" "Redshift" "DB"
-
-        LPR Turk
-
+        dw = softwareSystem "Data Warehouse" "Redshift or Druid" "DB"
         webUI = softwareSystem "Web UI for Customers" "" "WebUI"
       }
 
-      source -> onPremSystems "Consumes" "WebSockets"
-      source -> topics "Produces" "Kafka Consumer"
-      processors -> topics "Consume" "Kafka Streams"
-      processors -> topics "Produce" "Kafka Streams"
-      processors -> onPremSystems "Retrieve images" "HTTP"
-      processors -> bucket "Store images" "HTTP"
-      sink -> topics "Consumes" "Kafka Consumer"
-      sink -> db "Writes" "JDBC"
-      webUI -> db "Reads" "ActiveRecord"
-      webUI -> bucket "Reads to display images" "HTTP"
-      customers -> webUI "Generate analytical graphs, etc"
+      source -> onPremSystems "Consumes events from" "WebSockets"
+      source -> topics "Produces events to" "Kafka Consumer"
+      processors -> topics "Consume events" "Kafka Streams"
+      processors -> topics "Produce events" "Kafka Streams"
+      processors -> onPremSystems "Retrieve images from" "HTTP"
+      processors -> bucket "Store images in" "HTTP"
+      sink -> topics "Consumes events from" "Kafka Consumer"
+      sink -> dw "Writes events to" "JDBC"
+      webUI -> dw "Queries event metrics from" "ActiveRecord"
+      webUI -> bucket "Retrieves images" "HTTP"
+      customers -> webUI "Generate analytical graphs, tables, etc"
     }
 
     views {
-        systemLandscape systemLandscape01 "The new data pipeline." {
+        systemLandscape systemLandscapePlanned "The planned new streaming data pipeline" {
             include *
             autoLayout bt
         }

@@ -23,7 +23,7 @@ workspace "Presentation" "A model of my software system." {
     }
 
     views {
-        systemLandscape systemLandscape01 "The old data pipeline." {
+        systemLandscape systemLandscape01 "The old batch data pipeline" {
             include *
             autoLayout bt
         }
