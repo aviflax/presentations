@@ -37,16 +37,15 @@ A **Parking Guidance & Information** (PGI) system
 * **On-prem:**
 	* Sensors + Servers
 * **Cloud:**
-	* Monitoring
 	* Configuration
+ 	* Monitoring
 	* Analytics
 	* Web UI
 
 ^
 • These are some of the core components of the product
 • Those cloud elements were implemented as a single-instance multi-tenant system
-• The
-Hundreds of customers using that cloud-based Web app
+• There were hundreds of customers using that cloud-based Web app
 
 ----
 [.text: text-scale(1.4)]
@@ -56,7 +55,6 @@ Hundreds of customers using that cloud-based Web app
 1. Get the data
 2. Clean the data
 3. Store the data
-
 
 ^
 • The problems I needed to solve were part of that analytics feature
@@ -78,7 +76,6 @@ Hundreds of customers using that cloud-based Web app
 • Basically, it’d been designed and implemented when the number of customers was much smaller;
   • as the customer base grew it’d hit its scaling limit and was now overdue to be refactored.
 
-
 ----
 [.text: text-scale(1.4)]
 
@@ -97,8 +94,11 @@ Hundreds of customers using that cloud-based Web app
 • Secondary goals were new features; were impossible with old pipeline «reveal»
 
 ----
+[.text: text-scale(2), alignment(center)]
 
-# Architectural Style
+**Architectural Style**
+
+![yo dawg inline 120%](images/yo-dawg.png)
 
 ^
 • We knew from the start that we wanted to adopt streaming transport+processing
@@ -121,6 +121,11 @@ Programming | Clojure<br>Java<br>Kotlin<br>**Ruby**<br>Scala
 • Mention tension, prototyping
 
 ----
+
+[.text: text-scale(1.5)]
+
+**Old (Batch)**
+
 
 ![old diagram original fit](images/old-system-landscape.png)
 
