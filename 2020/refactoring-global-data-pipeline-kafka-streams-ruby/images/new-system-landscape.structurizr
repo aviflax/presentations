@@ -30,7 +30,7 @@ workspace "PGI Streaming ETL" "" {
     }
 
     views {
-        systemLandscape systemLandscapePlanned "The planned new streaming data pipeline" {
+        systemLandscape systemLandscapeNewStreamingETLPlanned "The planned new streaming data pipeline" {
             include *
         }
 

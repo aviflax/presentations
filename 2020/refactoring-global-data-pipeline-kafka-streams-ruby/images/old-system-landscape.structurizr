@@ -23,9 +23,8 @@ workspace "PGI Batch ETL" "" {
     }
 
     views {
-        systemLandscape systemLandscape01 "The old batch data pipeline" {
+        systemLandscape systemLandscapeOldBatchETL "The old batch data pipeline" {
             include *
-            autoLayout bt
         }
 
         styles {
