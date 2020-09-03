@@ -4,21 +4,21 @@ workspace "Presentation" "A model of my software system." {
 
     model {
       customers = person "Customers"
-      onPremSystems = softwareSystem "On-premises Systems"
-
-      # Questions:
-      # * Were LPR images downloaded along with visits?
-      #   * If so, where were they saved, and what thing did the transfers?
+      onPremSystems = softwareSystem "On-premises Servers"
 
       enterprise Cloud {
         cronScripts = softwareSystem "cron scripts" "Bash, Ruby"
-        db = softwareSystem "Data Warehouse" "SQL Server" "DB"
+        db = softwareSystem "Raw Events DB" "SQL Server" "DB"
+        etl = softwareSystem "Daily ETL" "SQL Server Integration Services (SSIS)"
+        dw = softwareSystem "Data Warehouse" "SQL Server" "DB"
         webUI = softwareSystem "Web UI for Customers" "" "WebUI"
       }
 
       cronScripts -> onPremSystems "Poll to get data" "HTTP"
-      cronScripts -> db "Writes" "ActiveRecord"
-      webUI -> db "Reads" "ActiveRecord"
+      cronScripts -> db "Write to" "ActiveRecord"
+      etl -> db "Reads from"
+      etl -> dw "Writes to"
+      webUI -> dw "Reads from" "ActiveRecord"
       customers -> webUI "Generate analytical graphs, etc"
     }
 
@@ -65,5 +65,4 @@ workspace "Presentation" "A model of my software system." {
             }
         }
     }
-
 }

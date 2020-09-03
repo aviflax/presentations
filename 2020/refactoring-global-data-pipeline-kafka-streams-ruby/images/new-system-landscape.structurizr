@@ -4,7 +4,7 @@ workspace "Presentation" "A model of my software system." {
 
     model {
       customers = person "Customers"
-      onPremSystems = softwareSystem "On-premises Systems"
+      onPremSystems = softwareSystem "On-premises Servers"
 
       # Questions:
       # * Was the data warehouse in fact Redshift? I think so...
@@ -16,6 +16,9 @@ workspace "Presentation" "A model of my software system." {
         sink = softwareSystem "Sink" "JRuby, Kafka Consumer, JDBC"
         bucket = softwareSystem "S3 Bucket" "For images" "FileStore"
         db = softwareSystem "Data Warehouse" "Redshift" "DB"
+
+        LPR Turk
+
         webUI = softwareSystem "Web UI for Customers" "" "WebUI"
       }
 

@@ -13,13 +13,12 @@ Avi Flax
 September 2020
 
 ----
-
-## The Product
-
 [.header: text-scale(1.5)]
 [.text: text-scale(1.5)]
 
-![right](images/garage-01.jpg)
+## The Product
+
+![garage right](images/garage-01.jpg)
 
 A **Parking Guidance & Information** (PGI) system
 
@@ -28,7 +27,6 @@ A **Parking Guidance & Information** (PGI) system
 • Installed in hundreds of multi-level parking structures around the world
 
 ----
-
 [.header: text-scale(1.5)]
 [.text: text-scale(1.4)]
 
@@ -47,7 +45,7 @@ A **Parking Guidance & Information** (PGI) system
 ^
 • These are some of the core components of the product
 • Those cloud elements were implemented as a single-instance multi-tenant system
-• The 
+• The
 Hundreds of customers using that cloud-based Web app
 
 ----
@@ -100,12 +98,33 @@ Hundreds of customers using that cloud-based Web app
 
 ----
 
-## Design + Technology Choices
+# Architectural Style
+
+^
+• We knew from the start that we wanted to adopt streaming transport+processing
+• My obsession with streaming was a big driver for the project
+• So we kicked the project off by choosing the set of technologies that we’d use
 
 ----
-[.text: text-scale(2.0)]
+[.text: text-scale(1.5)]
+
+## Technology Choices
+
+Role | Options Considered
+---- | ------------------
+Transport | **Kafka**<br>Kinesis
+Processing | **Kafka Streams**<br>Samza<br>Storm
+Programming | Clojure<br>Java<br>Kotlin<br>**Ruby**<br>Scala
+
+^
+• Walk through options + choices
+• Mention tension, prototyping
+
+----
+[.text: text-scale(1.2)]
 
 **Old**
+**(Batch)**
 
 ![old diagram original fit](images/old-system-landscape.png)
 
@@ -113,9 +132,9 @@ Hundreds of customers using that cloud-based Web app
 • Basically just a set of cron scripts that polled the on-prem servers on a fixed schedule
 
 ----
-[.text: text-scale(2.0)]
+[.text: text-scale(1.2)]
 
-**New**
+**New (Streaming)**
 
 ![new diagram original fit](images/new-system-landscape.png)
 
