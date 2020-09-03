@@ -5,12 +5,18 @@
 from PIL import Image, ImageFont, ImageDraw
 import sys
 
-font = ImageFont.truetype("Merriweather-Bold.ttf", 25)
+font = ImageFont.truetype("Merriweather-Bold.ttf", 200)
+
 
 def main(image_file_path, text):
-  img = Image.open(image_file_path)
-  ImageDraw.Draw(img).text((0,0), text, (255,255,0), font=font)
-  img.save('overlay_' + image_file_path)
+  with Image.open(image_file_path) as img:
+      draw = ImageDraw.Draw(img)
+      text_width, text_height = draw.textsize(text, font)
+      x = (img.width / 2) - (text_width / 2)
+      y = img.height - text_height
+      draw.text((x, y), text, fill=(0, 0, 0), font=font)
+      img.save(image_file_path)
+
   return True
 
 if __name__ == '__main__':

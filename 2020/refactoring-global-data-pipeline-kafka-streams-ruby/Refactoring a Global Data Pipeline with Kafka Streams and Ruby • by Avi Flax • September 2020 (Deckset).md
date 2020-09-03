@@ -121,10 +121,6 @@ Programming | Clojure<br>Java<br>Kotlin<br>**Ruby**<br>Scala
 • Mention tension, prototyping
 
 ----
-[.text: text-scale(1.2)]
-
-**Old**
-**(Batch)**
 
 ![old diagram original fit](images/old-system-landscape.png)
 
